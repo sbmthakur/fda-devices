@@ -1,0 +1,15 @@
+# fly.toml app configuration file generated for weathered-resonance-1487 on 2023-07-20T17:02:49-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "weathered-resonance-1487"
+primary_region = "den"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
